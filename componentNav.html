@@ -23,16 +23,36 @@
     </div>
     <div class="md:hidden hidden" id="mobile-menu">
       <div
-        class="flex flex-col space-y-4 text-secondary text-sm font-medium text-center py-4"
+        class="flex flex-col space-y-4 text-secondary text-xs font-medium text-center py-4"
       >
-        <a href="#" class="hover:text-secondary tracking-widest">Home</a>
-        <a href="#" class="hover:text-secondary tracking-widest">Ilmuan</a>
-        <a href="#" class="hover:text-secondary tracking-widest">Sejarah</a>
-        <a href="#" class="hover:text-secondary tracking-widest">Khalifa</a>
-        <a href="#" class="hover:text-secondary tracking-widest">Article</a>
+        <a
+          href="#"
+          class="hover:text-secondary tracking-widest text-sm sm:text-xs"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="hover:text-secondary tracking-widest text-sm sm:text-xs"
+          >Ilmuan</a
+        >
+        <a
+          href="#"
+          class="hover:text-secondary tracking-widest text-sm sm:text-xs"
+          >Sejarah</a
+        >
+        <a
+          href="#"
+          class="hover:text-secondary tracking-widest text-sm sm:text-xs"
+          >Khalifa</a
+        >
+        <a
+          href="#"
+          class="hover:text-secondary tracking-widest text-sm sm:text-xs"
+          >Article</a
+        >
         <div class="flex justify-center">
           <button
-            class="flex items-center space-x-2 text-sm font-medium text-secondary py-2 px-4 max-w-xs w-full rounded-md shadow backdrop-blur-sm bg-white/30 hover:bg-white/50"
+            class="flex items-center space-x-2 text-xs font-medium text-secondary py-2 px-4 max-w-xs w-full rounded-md shadow backdrop-blur-sm bg-white/30 hover:bg-white/50"
           >
             <i class="fas fa-search"></i>
             <span>Search</span>
@@ -51,10 +71,10 @@
   hamburgerBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
     if (mobileMenu.classList.contains("hidden")) {
-      hamburgerIcon.classList.remove("fa-times");
-      hamburgerIcon.classList.add("fa-bars"); 
+      hamburgerIcon.classList.remove("fa-times"); 
+      hamburgerIcon.classList.add("fa-bars");
     } else {
-      hamburgerIcon.classList.remove("fa-bars");
+      hamburgerIcon.classList.remove("fa-bars"); 
       hamburgerIcon.classList.add("fa-times"); 
     }
   });
