@@ -44,7 +44,9 @@
 
 <body>
     <!-- pake php include per-section -->
-    <?php include 'ilmuwan.html'; ?>
+    <?php include 'componentNav.html'; ?>
+    <?php include 'componentHero.html'; ?>
+    <?php include 'componentAbout.html'; ?>
 
     <!-- cara pemakaian aos -->
     <div data-aos="fade-in" class="bg-primary w-20 h-20"></div>
