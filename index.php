@@ -18,7 +18,8 @@
                 extend: {
                     colors: {
                         primary: '#BD874F',
-                        secondary: '#FAFAFA'
+                        secondary: '#FAFAFA',
+                        tertiary: '#BD847F'
                     }
                 }
             }
