@@ -17,14 +17,18 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        primary: '#BD874F',
+                        secondary: '#FAFAFA'
                     }
                 }
             }
         }
     </script>
 
-    <title></title>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>MRT Team</title>
 </head>
 
 <style>
@@ -41,8 +45,16 @@
     <!-- pake php include per-section -->
     <?php include 'ilmuwan.html'; ?>
 
+    <!-- cara pemakaian aos -->
+    <div data-aos="fade-in" class="bg-primary w-20 h-20"></div>
+
     <!-- cara pemakaian icon -->
     <i class="fa-solid fa-user"></i>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
