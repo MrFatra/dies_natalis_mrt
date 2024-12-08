@@ -1,3 +1,98 @@
-<section>
-    <p class="text-3xl">Test</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show More Section</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5f5df76327.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Add a fade-in animation */
+        .fade-in {
+            opacity: 0;
+            animation: fadeInAnimation 1s forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <section class="text-center my-10">
+        <p class="text-3xl font-bold text-tertiary">Ilmuwan</p>
+        <p class="text-xl mx-52 my-7 font-medium text-primary">
+            Para Ilmuwan Islam menemukan dan mengembangkan untuk membentuk dasar ilmu pengetahuan modern yang masih digunakan hingga saat ini
+        </p>
+
+        <!-- Section 1 -->
+        <div id="section-1" class="flex justify-center items-center gap-10 my-10">
+            <div class="h-60 w-60 bg-gray-400 hover:bg-slate-500">
+                <img src="https://uici.ac.id/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-29-at-08.29.37.jpeg" alt="" class="h-full w-full object-cover">
+            </div>
+            <div class="h-60 w-60 bg-gray-400 object-cover"></div>
+            <div class="h-60 w-60 bg-gray-400 object-cover"></div>
+        </div>
+
+        <!-- Section 2 (Hidden at first) -->
+        <div id="section-2" class="flex justify-center items-center gap-10 my-10 hidden">
+            <div class="h-60 w-60 bg-gray-400 object-cover"></div>
+            <div class="h-60 w-60 bg-gray-400 object-cover"></div>
+            <div class="h-60 w-60 bg-gray-400 object-cover"></div>
+        </div>
+
+        <!-- Section 3 (Hidden at first) -->
+        <div id="section-3" class="flex justify-center items-center gap-10 my-10 hidden">
+            <div class="h-60 w-60 bg-gray-400">
+                <img src="https://darunnajah.com/wp-content/uploads/2016/10/Ibnu-Sina-737x1024.jpg" alt="" class="h-full w-full object-cover">
+            </div>
+            <div class="h-60 w-60 bg-gray-400">
+                <img src="https://darunnajah.com/wp-content/uploads/2016/10/Ibnu-Sina-737x1024.jpg" alt="" class="h-full w-full object-cover">
+            </div>
+            <div class="h-60 w-60 bg-gray-400">
+                <img src="https://darunnajah.com/wp-content/uploads/2016/10/Ibnu-Sina-737x1024.jpg" alt="" class="h-full w-full object-cover">
+            </div>
+        </div>
+
+        <!-- Read More Button -->
+        <div id="read-more" 
+            class="bg-primary inline-flex justify-center items-center py-2 px-3 rounded-lg font-semibold text-white gap-2 cursor-pointer">
+            <p>Read more</p>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Ambil elemen tombol dan section yang akan ditampilkan
+        const readMoreButton = document.getElementById("read-more");
+        const section2 = document.getElementById("section-2");
+        const section3 = document.getElementById("section-3");
+
+        // Tambahkan event listener untuk tombol "Read more"
+        readMoreButton.addEventListener("click", function () {
+            // Tampilkan Section 2 dengan delay
+            setTimeout(function () {
+                section2.classList.remove("hidden");
+                section2.classList.add("fade-in");
+            }, 800); // Menampilkan setelah 0.5 detik
+
+            // Tampilkan Section 3 dengan delay lebih panjang
+            setTimeout(function () {
+                section3.classList.remove("hidden");
+                section3.classList.add("fade-in");
+            }, 1000); // Menampilkan setelah 1 detik
+
+            // Sembunyikan tombol "Read more" setelah diklik
+            readMoreButton.style.display = "none";
+        });
+    </script>
+</body>
+</html>
