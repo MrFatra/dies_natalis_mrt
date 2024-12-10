@@ -45,13 +45,13 @@
 <body>
     <!-- pake php include per-section -->
     <?php
-    include 'navbar.html'; 
+    include 'navbar.html';
     ?>
     <?php
-    include 'hero.html'; 
+    include 'hero.html';
     ?>
     <?php
-    include 'about.html'; 
+    include 'about.html';
     ?>
     <?php
     include 'ilmuwan.html';
@@ -59,8 +59,11 @@
     <?php
     include 'sejarah.html';
     ?>
+    
+    <?php include 'componentKhalifah.html' ?>
+    <?php include 'componentArticle.html' ?>
     <?php
-    // include 'footer.html';
+    include 'footer.html';
     ?>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
