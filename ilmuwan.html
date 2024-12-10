@@ -1,98 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show More Section</title>
+<section class="text-center my-20">
+    <p class="text-3xl font-bold text-tertiary">Ilmuwan</p>
+    <p class="lg:text-xl md:text-lg text-sm mx-10 sm:mx-20 lg:mx-60 my-7 font-semibold text-primary">
+        Para Ilmuwan Islam menemukan dan mengembangkan untuk membentuk dasar ilmu pengetahuan modern yang masih
+        digunakan hingga saat ini.
+    </p>
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/5f5df76327.js" crossorigin="anonymous"></script>
-
-    <style>
-        /* Add a fade-in animation */
-        .fade-in {
-            opacity: 0;
-            animation: fadeInAnimation 1s forwards;
-        }
-
-        @keyframes fadeInAnimation {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-    </style>
-</head>
-<body class="bg-gray-100">
-
-    <section class="text-center my-10">
-        <p class="text-3xl font-bold text-tertiary">Ilmuwan</p>
-        <p class="text-xl mx-52 my-7 font-medium text-primary">
-            Para Ilmuwan Islam menemukan dan mengembangkan untuk membentuk dasar ilmu pengetahuan modern yang masih digunakan hingga saat ini
-        </p>
-
-        <!-- Section 1 -->
-        <div id="section-1" class="flex justify-center items-center gap-10 my-10">
-            <div class="h-60 w-60 bg-gray-400 hover:bg-slate-500">
-                <img src="https://uici.ac.id/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-29-at-08.29.37.jpeg" alt="" class="h-full w-full object-cover">
-            </div>
-            <div class="h-60 w-60 bg-gray-400 object-cover"></div>
-            <div class="h-60 w-60 bg-gray-400 object-cover"></div>
-        </div>
-
-        <!-- Section 2 (Hidden at first) -->
-        <div id="section-2" class="flex justify-center items-center gap-10 my-10 hidden">
-            <div class="h-60 w-60 bg-gray-400 object-cover"></div>
-            <div class="h-60 w-60 bg-gray-400 object-cover"></div>
-            <div class="h-60 w-60 bg-gray-400 object-cover"></div>
-        </div>
-
-        <!-- Section 3 (Hidden at first) -->
-        <div id="section-3" class="flex justify-center items-center gap-10 my-10 hidden">
-            <div class="h-60 w-60 bg-gray-400">
-                <img src="https://darunnajah.com/wp-content/uploads/2016/10/Ibnu-Sina-737x1024.jpg" alt="" class="h-full w-full object-cover">
-            </div>
-            <div class="h-60 w-60 bg-gray-400">
-                <img src="https://darunnajah.com/wp-content/uploads/2016/10/Ibnu-Sina-737x1024.jpg" alt="" class="h-full w-full object-cover">
-            </div>
-            <div class="h-60 w-60 bg-gray-400">
-                <img src="https://darunnajah.com/wp-content/uploads/2016/10/Ibnu-Sina-737x1024.jpg" alt="" class="h-full w-full object-cover">
+    <div id="section-1"
+        class="flex lg:flex-row flex-row justify-center items-center lg:gap-10 md:gap-5 gap-2 lg:my-10 my-5">
+        <div class="image-container h-40 md:h-60 w-60 shadow-xl group relative" data-title="Al-Khawarizmi (780-850 M)"
+            data-field="Matematika, Astronomi, Geografi."
+            data-contribution='Penemu konsep aljabar (dari "Al-Jabr") dan algoritma yang menjadi dasar ilmu komputer modern.'>
+            <img src="https://uici.ac.id/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-29-at-08.29.37.jpeg"
+                alt="Al-Khawarizmi" class="h-full w-full object-cover">
+            <div
+                class="preview-btn absolute inset-0 flex items-center justify-center bg-opacity-50 bg-black text-white opacity-0 group-hover:opacity-100 cursor-pointer">
+                <p>Preview <i class="fa-solid fa-eye ml-2"></i></p>
             </div>
         </div>
-
-        <!-- Read More Button -->
-        <div id="read-more" 
-            class="bg-primary inline-flex justify-center items-center py-2 px-3 rounded-lg font-semibold text-white gap-2 cursor-pointer">
-            <p>Read more</p>
-            <i class="fa-solid fa-arrow-down"></i>
+        <div class="image-container h-40 md:h-60 w-60 shadow-xl group relative" data-title="Ibnu Sina (980-1037 M)"
+            data-field="Kedokteran, Filsafat, Ilmu Alam."
+            data-contribution="Penulis Al-Qanun fi al-Tibb (The Canon of Medicine), panduan medis yang menjadi rujukan dunia selama berabad-abad.">
+            <img src="https://darunnajah.com/wp-content/uploads/2016/10/Ibnu-Sina-737x1024.jpg" alt="Ibnu Sina"
+                class="h-full w-full object-cover">
+            <div
+                class="preview-btn absolute inset-0 flex items-center justify-center bg-opacity-50 bg-black text-white opacity-0 group-hover:opacity-100 cursor-pointer">
+                <p>Preview <i class="fa-solid fa-eye ml-2"></i></p>
+            </div>
         </div>
-    </section>
+        <div class="image-container h-40 md:h-60 w-60 shadow-xl group relative" data-title="Imam Al-Bukhari (810-870 M)"
+            data-field="Hadis."
+            data-contribution="Penyusun Shahih Al-Bukhari, kitab hadis paling otoritatif dalam Islam.">
+            <img src="https://perpus.tebuireng.ac.id/wp-content/uploads/2023/10/imam.jpg" alt="Imam Al-Bukhari"
+                class="h-full w-full object-cover">
+            <div
+                class="preview-btn absolute inset-0 flex items-center justify-center bg-opacity-50 bg-black text-white opacity-0 group-hover:opacity-100 cursor-pointer">
+                <p>Preview <i class="fa-solid fa-eye ml-2"></i></p>
+            </div>
+        </div>
+    </div>
 
-    <!-- JavaScript -->
-    <script>
-        // Ambil elemen tombol dan section yang akan ditampilkan
-        const readMoreButton = document.getElementById("read-more");
-        const section2 = document.getElementById("section-2");
-        const section3 = document.getElementById("section-3");
+    <div id="section-2" class="flex justify-center items-center lg:gap-10 md:gap-5 gap-2 mb-10 hidden"
+        data-aos-duration="1000">
+        <div class="image-container h-40 sm:h-60 w-60 shadow-xl group relative" data-title="Al-Farabi (872-950 M)"
+            data-field="Filsafat, Logika, Musik."
+            data-contribution='Mengembangkan teori musik dan logika; dikenal sebagai "Guru Kedua" setelah Aristoteles.'>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Abu_Nasr_al-Farabi_%28head%29.png"
+                alt="Al-Farabi" class="h-full w-full object-cover">
+            <div
+                class="preview-btn absolute inset-0 flex items-center justify-center bg-opacity-50 bg-black text-white opacity-0 group-hover:opacity-100 cursor-pointer">
+                <p>Preview <i class="fa-solid fa-eye ml-2"></i></p>
+            </div>
+        </div>
+        <div class="image-container h-40 sm:h-60 w-60 shadow-xl group relative" data-title="Ibnu Khaldun (1332-1406 M)"
+            data-field="Sejarah, Sosiologi, Ekonomi."
+            data-contribution="Penulis Muqaddimah, dianggap sebagai karya awal dalam ilmu sosiologi dan historiografi modern.">
+            <img src="https://statik.tempo.co/data/2023/04/03/id_1194302/1194302_720.jpg" alt="Ibnu Khaldun"
+                class="h-full w-full object-cover">
+            <div
+                class="preview-btn absolute inset-0 flex items-center justify-center bg-opacity-50 bg-black text-white opacity-0 group-hover:opacity-100 cursor-pointer">
+                <p>Preview <i class="fa-solid fa-eye ml-2"></i></p>
+            </div>
+        </div>
+        <div class="image-container h-40 md:h-60 w-60 shadow-xl group relative" data-title="Al-Razi (865-925 M)"
+            data-field="Kedokteran, Kimia."
+            data-contribution="Penulis karya medis terkenal seperti Al-Hawi dan penemu alkohol sebagai alat sterilisasi.">
+            <img src="https://mediaislam.id/wp-content/uploads/2024/03/ar-razi.jpg" alt="Al-Razi"
+                class="h-full w-full object-cover">
+            <div
+                class="preview-btn absolute inset-0 flex items-center justify-center bg-opacity-50 bg-black text-white opacity-0 group-hover:opacity-100 cursor-pointer">
+                <p>Preview <i class="fa-solid fa-eye ml-2"></i></p>
+            </div>
+        </div>
+    </div>
 
-        // Tambahkan event listener untuk tombol "Read more"
-        readMoreButton.addEventListener("click", function () {
-            // Tampilkan Section 2 dengan delay
-            setTimeout(function () {
-                section2.classList.remove("hidden");
-                section2.classList.add("fade-in");
-            }, 800); // Menampilkan setelah 0.5 detik
+    <div id="read-more"
+        class="bg-primary inline-flex justify-center items-center py-2 px-3 rounded-md font-medium text-white gap-2 cursor-pointer animate-bounce">
+        <p>Read more</p>
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
 
-            // Tampilkan Section 3 dengan delay lebih panjang
-            setTimeout(function () {
-                section3.classList.remove("hidden");
-                section3.classList.add("fade-in");
-            }, 1000); // Menampilkan setelah 1 detik
+</section>
 
-            // Sembunyikan tombol "Read more" setelah diklik
-            readMoreButton.style.display = "none";
+<div id="modal" class="modal">
+    <div class="modal-content relative border-primary border-4 border-opacity-50 rounded-xl">
+        <img id="modal-img" src="" alt="Ilmuwan" class="modal-img object-contain">
+        <div class="modal-text flex gap-5 flex-col justify-center items-center">
+            <h2 id="modal-title" class="text-xl font-bold text-primary"></h2>
+            <p id="modal-field" class="text-xs md:text-base bg-primary py-2 px-3 rounded-lg text-secondary"></p>
+            <p id="modal-contribution" class="text-xs md:text-base text-center text-primary font-medium"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    const readMoreButton = document.getElementById("read-more");
+    const section1 = document.getElementById("section-1");
+    const section2 = document.getElementById("section-2");
+
+    const images = section1.querySelectorAll('.image-container');
+    images.forEach((image, index) => {
+        image.setAttribute('data-aos', 'fade-up');
+        image.setAttribute("data-aos-duration", (index + 1) * 800);
+    });
+
+    readMoreButton.addEventListener("click", function () {
+        section2.classList.remove("hidden");
+        const images = section2.querySelectorAll('.image-container');
+        images.forEach((image, index) => {
+            image.setAttribute('data-aos', 'fade-up');
+            image.setAttribute("data-aos-duration", (index + 1) * 800);
         });
-    </script>
-</body>
-</html>
+
+        AOS.init();
+        readMoreButton.style.display = "none";
+    });
+
+    const imageContainers = document.querySelectorAll('.image-container');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+    const modalField = document.getElementById('modal-field');
+    const modalContribution = document.getElementById('modal-contribution');
+    const closeModalBtn = document.getElementById('close-btn');
+
+    imageContainers.forEach(container => {
+        container.addEventListener("click", () => {
+            modalImg.src = container.querySelector('img').src;
+            modalTitle.textContent = container.getAttribute("data-title");
+            modalField.innerHTML = `<strong>Bidang:</strong> ${container.getAttribute("data-field")}`;
+            modalContribution.innerHTML = `${container.getAttribute("data-contribution")}`;
+            modal.style.display = "flex";
+        });
+    });
+
+    window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+</script>
+
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 20px 50px;
+        max-width: 80%;
+        max-height: 80%;
+        overflow-y: auto;
+        animation: fadeIn 0.2s ease-out forwards;
+    }
+
+    .modal-img {
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+    }
+
+    .modal-text {
+        padding: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+        .modal-content {
+            width: 90%;
+            padding: 10px;
+        }
+
+        .modal-img {
+            width: 100%;
+        }
+
+        .modal-text {
+            padding: 5px 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .modal-content {
+            width: 95%;
+        }
+
+        .modal-img {
+            max-height: 200px;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+</style>

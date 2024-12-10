@@ -1,0 +1,58 @@
+<section class="bg-transparent py-4 fixed top-0 z-10 shadow-lg w-full text-secondary transition-all duration-300"
+  id="navbar">
+  <div class="flex justify-between items-center gap-10 mr-5">
+    <div class=" text-2xl font-bold ml-14 flex-1">MRT</div>
+    <div class="hidden md:flex space-x-6 text-sm font-medium flex-1">
+      <a href="#" class="tracking-widest">Home</a>
+      <a href="#" class="tracking-widest">Ilmuan</a>
+      <a href="#" class="tracking-widest">Sejarah</a>
+      <a href="#" class="tracking-widest">Khalifa</a>
+      <a href="#" class="tracking-widest">Article</a>
+    </div>
+    <div class="flex flex-1 items-center justify-end">
+      <button
+        class="hidden md:flex items-center space-x-2 text-sm lg:w-1/2 w-1/2 md:w-full font-medium py-2 px-4 rounded-md shadow backdrop-blur-sm bg-white/30 hover:bg-white/50">
+        <i class="fas fa-search"></i>
+        <span>Search</span>
+      </button>
+    </div>
+    <div class="md:hidden mr-14">
+      <button class=" text-2xl" id="hamburger-btn">
+        <i class="fas fa-bars" id="hamburger-icon"></i>
+      </button>
+    </div>
+  </div>
+  <div class="md:hidden hidden" id="mobile-menu">
+    <div class="flex flex-col space-y-4  text-xs font-medium text-center py-4">
+      <a href="#" class="tracking-widest text-sm sm:text-xs">Home</a>
+      <a href="#" class="tracking-widest text-sm sm:text-xs">Ilmuan</a>
+      <a href="#" class="tracking-widest text-sm sm:text-xs">Sejarah</a>
+      <a href="#" class="tracking-widest text-sm sm:text-xs">Khalifa</a>
+      <a href="#" class="tracking-widest text-sm sm:text-xs">Article</a>
+      <div class="flex justify-center">
+        <button
+          class="flex items-center space-x-2 text-xs font-medium mx-5 py-2 px-4 max-w-xs w-full rounded-md shadow backdrop-blur-sm bg-white/30 hover:bg-white/50">
+          <i class="fas fa-search"></i>
+          <span>Search</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const hamburgerBtn = document.getElementById("hamburger-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+
+  hamburgerBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    if (mobileMenu.classList.contains("hidden")) {
+      hamburgerIcon.classList.remove("fa-times");
+      hamburgerIcon.classList.add("fa-bars");
+    } else {
+      hamburgerIcon.classList.remove("fa-bars");
+      hamburgerIcon.classList.add("fa-times");
+    }
+  });
+</script>
