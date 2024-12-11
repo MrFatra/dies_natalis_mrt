@@ -50,64 +50,77 @@ const articlesData = [
     },
     {
       title: "Kontribusi Ilmuwan Muslim pada Masa Kejayaan Islam",
-      description: "Deskripsi 1.2",
+      description: "Menceritakan tenatang masa keemasan islam",
       author: "RadenPahikallFikri",
       image:
         "https://thumb.viva.co.id/media/frontend/thumbs3/2019/10/30/5db955d0bc6a4-the-golden-age-of-islam-masa-kejayaan-umat-islam_1265_711.jpg",
-      link: "ahttps://www.viva.co.id/vstory/sejarah-vstory/1185912-the-golden-age-of-islam-masa-kejayaan-umat-islam",
+      link: "https://www.viva.co.id/vstory/sejarah-vstory/1185912-the-golden-age-of-islam-masa-kejayaan-umat-islam",
     },
     {
-      title: "Judul 1.3",
-      description: "Deskripsi 1.3",
-      author: "Penulis C",
-      image: "https://via.placeholder.com/150",
-      link: "article1-3.html",
-    },
-  ],
-  [
-    {
-      title: "Judul 2.1",
-      description: "Deskripsi 2.1",
-      author: "Penulis D",
-      image: "https://via.placeholder.com/150",
-      link: "article2-1.html",
-    },
-    {
-      title: "Judul 2.2",
-      description: "Deskripsi 2.2",
-      author: "Penulis E",
-      image: "https://via.placeholder.com/150",
-      link: "article2-2.html",
-    },
-    {
-      title: "Judul 2.3",
-      description: "Deskripsi 2.3",
-      author: "Penulis F",
-      image: "https://via.placeholder.com/150",
-      link: "article2-3.html",
+      title: "Siswa, Kenali Tokoh-tokoh Ilmuwan dalam Peradaban Islam",
+      description: "Memberikan Pengetahuan tokoh tokoh ilmuan muslim",
+      author: "Ayunda Pininta Kasih",
+      image:
+        "https://asset.kompas.com/crops/rXpeOasSn9E_SrC26f6CFGagVVY=/0x0:739x493/1200x800/data/photo/2020/05/21/5ec66efd015ea.jpg",
+      link: "https://edukasi.kompas.com/read/2021/04/14/090259471/siswa-kenali-tokoh-tokoh-ilmuwan-dalam-peradaban-islam",
     },
   ],
   [
     {
-      title: "Judul 3.1",
-      description: "Deskripsi 3.1",
-      author: "Penulis G",
-      image: "https://via.placeholder.com/150",
-      link: "article3-1.html",
+      title: "Islam Di Indonesia",
+      description:
+        "Indonesia adalah negara yang memiliki populasi Muslim terbesar di seluruh dunia. Pada saat ini diperkirakan bahwa jumlah umat Muslim mencapai 207 juta orang,",
+      author: "Indonesi Invesment",
+      image:
+        "https://www.indonesia-investments.com/upload/images/islam-in-indonesia.png",
+      link: "https://www.indonesia-investments.com/id/budaya/agama/islam/item248",
     },
     {
-      title: "Judul 3.2",
-      description: "Deskripsi 3.2",
-      author: "Penulis H",
-      image: "https://via.placeholder.com/150",
-      link: "article3-2.html",
+      title:
+        "Kisah Perang: Sejarah Penaklukan Konstantinopel oleh Turki Ottoman",
+      description: "Menceritakan Sejarah awal keruntuhan konstantinopel",
+      author: "Aditya Jaya Iswara",
+      image:
+        "https://asset.kompas.com/crops/ltUxH6s-3KP9Q1XCGhHzRxG9mcQ=/0x0:1999x1333/1200x800/data/photo/2021/04/20/607e8701d70f4.jpg",
+      link: "https://internasional.kompas.com/read/2021/04/20/160000170/kisah-perang-sejarah-penaklukan-konstantinopel-oleh-turki-ottoman?page=all",
     },
     {
-      title: "Judul 3.3",
-      description: "Deskripsi 3.3",
-      author: "Penulis I",
-      image: "https://via.placeholder.com/150",
-      link: "article3-3.html",
+      title: "6 Jalur Penyebaran Islam di Indonesia",
+      description:
+        "Penyebaran Islam di Indonesia terjadi melalui beberapa jalur. Salah satu yang populer adalah jalur perdagangan. Namun, ada sejumlah jalur lain pada saat itu.",
+      author: "Annisa dayana Salsabilla",
+      image:
+        "https://akcdn.detik.net.id/community/media/visual/2020/05/08/7b95ade5-b052-4dba-9d79-099f191cc408.jpeg?w=700&q=90",
+      link: "https://www.detik.com/hikmah/khazanah/d-7313985/6-jalur-penyebaran-islam-di-indonesia",
+    },
+  ],
+  [
+    {
+      title: "Sejarah Nabi Muhammad dan Pengaruhnya bagi Peradaban Dunia",
+      description:
+        "Sebagai seorang muslim mengetahui sejarah Nabi Muhammad SAW tentunya merupakan sebuah kewajiban sebagai bentuk keimanan kepada beliau sebagai utusan Allah SWT.",
+      author: "Sejarah dan Sosial",
+      image:
+        "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01gwwnsg1gz0dg6qn02sd959p2.jpg",
+      link: "https://kumparan.com/sejarah-dan-sosial/sejarah-nabi-muhammad-dan-pengaruhnya-bagi-peradaban-dunia-207lSz3OnNf",
+    },
+    {
+      title: "4 Kitab yang Diturunkan Allah SWT Beserta Rasul yang Menerimanya",
+      description:
+        "Kitab suci merupakan tuntunan awal dan keyakinan bagi suatu agama. Dalam Islam, kitab punya dua arti yaitu perintah dan tulisan di atas kertas.",
+      author: "Meilani Teniwut",
+      image:
+        "https://mediaindonesia.com/cdn-cgi/image/width=800,quality=80,format=webp/https://asset.mediaindonesia.com/news/2023/01/bc7f74a9eb121857c81f21284441d92c.jpg",
+      link: "https://mediaindonesia.com/humaniora/550056/4-kitab-yang-diturunkan-allah-swt-beserta-rasul-yang-menerimanya",
+    },
+    {
+      title: "Mengenal 9 Wali Songo, Cara Dakwah dan Asal Usulnya",
+      description:
+        "Di sepanjang sejarah Islam di Indonesia, Wali Songo dikenal sebagai tokoh-tokoh agama yang berkontribusi besar pada penyebaran Islam di tanah Jawa dan wilayah sekitarnya.",
+      author: "Nesa Azra",
+      image:
+        "https://uici.ac.id/wp-content/uploads/2023/12/Nama-Nama-Wali-Songo-Beserta-Sejarah-Silsilah-Kisah-dan-Fotonya.jpg.webp",
+      link: "https://uici.ac.id/mengenal-9-wali-songo-cara-dakwah-dan-asal-usulnya/",
     },
   ],
 ];
