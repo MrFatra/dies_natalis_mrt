@@ -66,3 +66,25 @@
         transform: scale(1);
     }
 }
+
+.hidden a {
+    position: relative;
+    text-decoration: none;
+    color: inherit; /* Warna teks mengikuti elemen */
+  }
+  
+  .hidden a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px; /* Ketebalan underline */
+    border-radius: 99999999px;
+    background: currentColor; /* Warna mengikuti teks */
+    transition: width 0.3s ease-out; /* Durasi dan efek animasi */
+  }
+  
+  .hidden a:hover::after {
+    width: 100%; /* Panjang underline menjadi penuh saat hover */
+  }
