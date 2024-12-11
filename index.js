@@ -24,10 +24,14 @@ window.addEventListener("scroll", () => {
 
   if (scrollPosition > heroHeight) {
     navbar.classList.add("bg-white", "text-primary", "shadow-lg");
-    navbar.classList.remove("bg-transparent", "text-secondary", 'text-white');
+    navbar.classList.remove("bg-transparent", "text-secondary", "text-white");
   } else {
-    console.log('masuk sini 1');
-    navbar.classList.add("bg-transparent", "text-secondary", 'backdrop-blur-md');
+    console.log("masuk sini 1");
+    navbar.classList.add(
+      "bg-transparent",
+      "text-secondary",
+      "backdrop-blur-md"
+    );
     navbar.classList.remove("bg-white", "text-primary", "shadow-lg");
   }
 });
@@ -36,19 +40,21 @@ window.addEventListener("scroll", () => {
 const articlesData = [
   [
     {
-      title: "Judul 1.1",
-      description: "Deskripsi 1.1",
-      author: "Penulis A",
+      title: "Sejarah 8 Tokoh pada Masa Kejayaan Islam Beserta Hasil Karyanya",
+      description:
+        "Banyak tokoh ilmuwan Islam beserta hasil karyanya yang tercatat dalam sejarah. Berikut profil 8 tokoh ilmuwan Islam yang sebaiknya Anda tahu.",
+      author: " Abdul Hadi",
       image:
-        "https://pict.sindonews.net/webp/480/pena/news/2022/12/05/786/960971/10-prestasi-muawiyah-salah-satunya-membangun-armada-laut-pertama-dalam-islam-cyd.webp",
-      link: "article1-1.html",
+        "https://mmc.tirto.id/image/otf/970x0/2017/06/16/headeribn-sina-1_ratio-16x9.jpg",
+      link: "https://tirto.id/sejarah-8-tokoh-pada-masa-kejayaan-islam-beserta-hasil-karyanya-gawe",
     },
     {
-      title: "Judul 1.2",
+      title: "Kontribusi Ilmuwan Muslim pada Masa Kejayaan Islam",
       description: "Deskripsi 1.2",
-      author: "Penulis B",
-      image: "https://via.placeholder.com/150",
-      link: "article1-2.html",
+      author: "RadenPahikallFikri",
+      image:
+        "https://thumb.viva.co.id/media/frontend/thumbs3/2019/10/30/5db955d0bc6a4-the-golden-age-of-islam-masa-kejayaan-umat-islam_1265_711.jpg",
+      link: "ahttps://www.viva.co.id/vstory/sejarah-vstory/1185912-the-golden-age-of-islam-masa-kejayaan-umat-islam",
     },
     {
       title: "Judul 1.3",
@@ -146,23 +152,22 @@ function changePage(page) {
 renderArticles(currentPage);
 updatePaginationButtons();
 
-
 //  Modal
 const readMoreButton = document.getElementById("read-more");
 const section1 = document.getElementById("section-1");
 const section2 = document.getElementById("section-2");
 
-const images = section1.querySelectorAll('.image-container');
+const images = section1.querySelectorAll(".image-container");
 images.forEach((image, index) => {
-  image.setAttribute('data-aos', 'fade-up');
+  image.setAttribute("data-aos", "fade-up");
   image.setAttribute("data-aos-duration", (index + 1) * 800);
 });
 
 readMoreButton.addEventListener("click", function () {
   section2.classList.remove("hidden");
-  const images = section2.querySelectorAll('.image-container');
+  const images = section2.querySelectorAll(".image-container");
   images.forEach((image, index) => {
-    image.setAttribute('data-aos', 'fade-up');
+    image.setAttribute("data-aos", "fade-up");
     image.setAttribute("data-aos-duration", (index + 1) * 800);
   });
 
@@ -170,20 +175,24 @@ readMoreButton.addEventListener("click", function () {
   readMoreButton.style.display = "none";
 });
 
-const imageContainers = document.querySelectorAll('.image-container');
-const modal = document.getElementById('modal');
-const modalImg = document.getElementById('modal-img');
-const modalTitle = document.getElementById('modal-title');
-const modalField = document.getElementById('modal-field');
-const modalContribution = document.getElementById('modal-contribution');
-const closeModalBtn = document.getElementById('close-btn');
+const imageContainers = document.querySelectorAll(".image-container");
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modal-img");
+const modalTitle = document.getElementById("modal-title");
+const modalField = document.getElementById("modal-field");
+const modalContribution = document.getElementById("modal-contribution");
+const closeModalBtn = document.getElementById("close-btn");
 
-imageContainers.forEach(container => {
+imageContainers.forEach((container) => {
   container.addEventListener("click", () => {
-    modalImg.src = container.querySelector('img').src;
+    modalImg.src = container.querySelector("img").src;
     modalTitle.textContent = container.getAttribute("data-title");
-    modalField.innerHTML = `<strong>Bidang:</strong> ${container.getAttribute("data-field")}`;
-    modalContribution.innerHTML = `${container.getAttribute("data-contribution")}`;
+    modalField.innerHTML = `<strong>Bidang:</strong> ${container.getAttribute(
+      "data-field"
+    )}`;
+    modalContribution.innerHTML = `${container.getAttribute(
+      "data-contribution"
+    )}`;
     modal.style.display = "flex";
   });
 });
