@@ -1,3 +1,21 @@
+.search-label {
+    position: relative;
+}
+
+.search-label::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: url("data:image/svg+xml; charset=utf-8;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCAxMDEgMTAxIiBpZD0iU2VhcmNoIj4KICA8cGF0aCBkPSJNNjMuMyA1OS45YzMuOC00LjYgNi4yLTEwLjUgNi4yLTE3IDAtMTQuNi0xMS45LTI2LjUtMjYuNS0yNi41UzE2LjUgMjguMyAxNi41IDQyLjkgMjguNCA2OS40IDQzIDY5LjRjNi40IDAgMTIuNC0yLjMgMTctNi4ybDIwLjYgMjAuNmMuNS41IDEuMS43IDEuNy43LjYgMCAxLjItLjIgMS43LS43LjktLjkuOS0yLjUgMC0zLjRMNjMuMyA1OS45em0tMjAuNCA0LjdjLTEyIDAtMjEuNy05LjctMjEuNy0yMS43czkuNy0yMS43IDIxLjctMjEuNyAyMS43IDkuNyAyMS43IDIxLjctOS43IDIxLjctMjEuNyAyMS43eiIgZmlsbD0iI2ZmZmZmZiIgY2xhc3M9ImNvbG9yMDAwMDAwIHN2Z1NoYXBlIj48L3BhdGg+Cjwvc3ZnPgo=") center / contain no-repeat ;
+}
+
+.search-input {
+    padding: 10px 30px;
+}
+
 .modal {
     display: none;
     position: fixed;

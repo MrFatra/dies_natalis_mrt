@@ -16,6 +16,7 @@ hamburgerBtn.addEventListener("click", () => {
 
 // Hero
 const navbar = document.getElementById("navbar");
+const searchInputs = document.getElementsByClassName("search-input");
 const hero = document.getElementById("hero");
 
 window.addEventListener("scroll", () => {
@@ -25,14 +26,23 @@ window.addEventListener("scroll", () => {
   if (scrollPosition > heroHeight) {
     navbar.classList.add("bg-white", "text-primary", "shadow-lg");
     navbar.classList.remove("bg-transparent", "text-secondary", "text-white");
+
+    Array.from(searchInputs).forEach(input => {
+      input.classList.add("border-transparent", "shadow-lg");
+      input.classList.remove("border-white");
+    });
+
   } else {
-    console.log("masuk sini 1");
     navbar.classList.add(
       "bg-transparent",
       "text-secondary",
       "backdrop-blur-md"
     );
     navbar.classList.remove("bg-white", "text-primary", "shadow-lg");
+    Array.from(searchInputs).forEach(input => {
+      input.classList.add("border-white");
+      input.classList.remove("border-transparent");
+    });
   }
 });
 
