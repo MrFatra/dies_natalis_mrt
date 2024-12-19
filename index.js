@@ -28,7 +28,7 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("bg-transparent", "text-secondary", "text-white");
 
     Array.from(searchInputs).forEach(input => {
-      input.classList.add("border-transparent", "shadow-lg");
+      input.classList.add("border-transparent", "shadow-lg", "text-white");
       input.classList.remove("border-white");
     });
 
