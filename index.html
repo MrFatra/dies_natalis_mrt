@@ -32,10 +32,17 @@
 
   <!-- font -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
     @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap");
 
     * {
       font-family: "Plus Jakarta Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+    
+    .tangerine {
+      font-family: "Tangerine", serif;
       font-optical-sizing: auto;
       font-style: normal;
     }
@@ -48,29 +55,29 @@
   <nav class="bg-transparent py-4 fixed top-0 z-10 shadow-lg w-full text-secondary transition-all duration-300"
     id="navbar">
     <div class="flex justify-between items-center mx-5 gap-5">
-      <div class="lg:text-2xl text-xl font-bold">Islam Heritage</div>
-      <div class="hidden md:flex space-x-6 text-sm font-medium">
+      <div class="tangerine font-bold text-4xl sm:flex-1">Islam Heritage</div>
+      <div class="hidden lg:flex space-x-6 text-sm font-medium sm:flex-1">
         <a href="#" class="tracking-widest">Home</a>
         <a href="#Ilmuan" class="tracking-widest">Ilmuwan</a>
         <a href="#sejarah" class="tracking-widest">Sejarah</a>
         <a href="#khalifah" class="tracking-widest">Khalifah</a>
         <a href="#artikel" class="tracking-widest">Article</a>
       </div>
-      <div class="flex">
-        <div class="relative items-center hidden group md:flex">
+      <div class="flex sm:flex-1 justify-end">
+        <div class="relative items-center hidden group lg:flex">
           <label for="search" class="search-label">
             <input type="text" placeholder="Search"
               class="search-input rounded-lg bg-primary bg-opacity-50 border placeholder:text-white md:py-2">
           </label>
         </div>
       </div>
-      <div class="md:hidden mr-14">
+      <div class="lg:hidden">
         <button class="text-2xl" id="hamburger-btn">
           <i class="fas fa-bars" id="hamburger-icon"></i>
         </button>
       </div>
     </div>
-    <div class="md:hidden hidden" id="mobile-menu">
+    <div class="lg:hidden hidden" id="mobile-menu">
       <div class="flex flex-col space-y-4 text-xs font-medium text-center py-4">
         <a href="#" class="tracking-widest text-sm sm:text-xs">Home</a>
         <a href="#Ilmuan" class="tracking-widest text-sm sm:text-xs">Ilmuwan</a>
@@ -78,10 +85,10 @@
         <a href="#khalifah" class="tracking-widest text-sm sm:text-xs">Khalifah</a>
         <a href="#artikel" class="tracking-widest text-sm sm:text-xs">Article</a>
         <div class="flex justify-center">
-          <div class="relative items-center justify-center md:hidden group flex">
+          <div class="relative items-center justify-center lg:hidden group flex">
             <label for="search" class="search-label">
               <input type="text" placeholder="Search"
-                class="search-input rounded-lg bg-primary bg-opacity-50 border placeholder:text-white text-white">
+                class="search-input rounded-lg bg-primary bg-opacity-50 border placeholder:text-white md:py-2">
             </label>
           </div>
         </div>
@@ -91,14 +98,13 @@
 
   <!-- Hero -->
   <section class="mb-20" id="hero">
-
-    <body class="hero">
+    <div class="hero">
       <div class="relative h-screen bg-black">
         <div class="absolute inset-0 bg-cover bg-center opacity-50" style="
               background-image: url('https://images.unsplash.com/photo-1639757975409-d0f7668d28df?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             "></div>
         <div class="relative flex flex-col items-center justify-center h-full text-secondary text-center px-4">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wide mb-4">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wide mb-4 ">
             Golden Age
           </h1>
           <p class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wider mb-4">
@@ -106,7 +112,7 @@
           </p>
         </div>
       </div>
-    </body>
+    </div>
   </section>
 
   <!-- About -->
@@ -114,7 +120,7 @@
     <div class="max-w-screen-xl mx-auto p-6">
       <div class="flex flex-col md:flex-row items-center md:space-x-12">
         <div class="w-full md:w-1/2">
-          <h2 class="text-3xl font-bold text-tertiary mb-4">About</h2>
+          <h2 class="tangerine md:text-6xl text-5xl font-bold text-tertiary mb-4">About</h2>
           <img src="https://t.commonsupport.xyz/lodz/images/resource/history-img-1.png" alt="Sejarah Islam"
             class="w-full rounded" />
           <p class="text-sm sm:text-base md:text-lg text-primary leading-relaxed my-7">
@@ -167,7 +173,7 @@
 
   <!-- Ilmuwan -->
   <section class="my-10 text-center" id="Ilmuan">
-    <h1 class="text-center text-3xl font-bold text-tertiary mb-4">Ilmuwan</h1>
+    <h1 class="tangerine md:text-6xl text-5xl text-center font-bold text-tertiary mb-4">Ilmuwan</h1>
     <p class="text-sm sm:text-base md:text-lg text-primary">
       Para Ilmuwan Islam menemukan dan mengembangkan <br />
       untuk membentuk dasar ilmu pengetahuan modern <br />
@@ -252,7 +258,7 @@
 
   <!-- Sejarah -->
   <section class="my-10 bg-primary py-14 md:px-20 px-10 overflow-x-hidden" id="sejarah">
-    <h1 class="text-center text-3xl font-bold text-secondary mb-4">
+    <h1 class="tangerine md:text-6xl text-5xl text-center font-bold text-secondary mb-4">
       Sejarah
     </h1>
     <p class="text-sm sm:text-base md:text-lg text-secondary text-center">
@@ -342,7 +348,7 @@
 
   <!-- Khalifah -->
   <section class="my-10 mx-5 sm:mx-10 lg:mx-24" id="khalifah">
-    <h1 class="text-3xl font-bold text-tertiary mb-4">Khalifah</h1>
+    <h1 class="tangerine md:text-6xl text-5xl font-bold text-tertiary mb-4">Khalifah</h1>
     <p class="text-sm sm:text-base md:text-lg text-primary mb-5">
       Khalifah dalam Islam berarti "pengganti" atau "pemimpin". Istilah ini
       merujuk <br />
@@ -429,7 +435,7 @@
 
   <!-- Artikel -->
   <section class="my-10 max-w-screen-lg mx-5 sm:mx-10 lg:mx-24" id="artikel">
-    <h1 class="text-center text-3xl font-bold text-tertiary mb-4">Article</h1>
+    <h1 class="tangerine md:text-6xl text-5xl text-center font-bold text-tertiary mb-4">Article</h1>
     <div id="articles" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
     <div class="flex justify-center items-center mt-6 space-x-2">
